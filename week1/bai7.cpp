@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-static int sumArray(int a[][100], int n, int m) {
+static int sumArray(int a[][100], const int n, const int m) {
     int sum = 0;
 
     for (int i = 0; i < n; i++) {
@@ -13,7 +13,7 @@ static int sumArray(int a[][100], int n, int m) {
     return sum;
 }
 
-static void deleteRow(int a[][100], int &n, int m, int i) {
+static void deleteRow(int a[][100], int &n, const int m, const int i) {
     if (i < 0 || i >= n)
         return;
 

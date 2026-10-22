@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-static void deleteAt(int a[], int &n, int k) {
+static void deleteAt(int a[], int &n, const int k) {
     if (k < 0 || k >= n)
         return;
 
@@ -12,7 +12,7 @@ static void deleteAt(int a[], int &n, int k) {
     n--;
 }
 
-static void insertAt(int a[], int &n, int m, int y) {
+static void insertAt(int a[], int &n, const int m, const int y) {
     for (int i = n; i > m; i--) {
         a[i] = a[i - 1];
     }

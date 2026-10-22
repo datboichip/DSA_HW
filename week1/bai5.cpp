@@ -13,7 +13,7 @@ int main() {
         sum += a[i];
     }
 
-    double average = sum / n;
+    const double average = sum / n;
 
     cout << "Average = " << average << endl;
 

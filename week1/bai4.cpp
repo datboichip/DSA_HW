@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int gcd(int a, int b) {
+static int gcd(int a, int b) {
     while (b != 0) {
         int r = a % b;
         a = b;
@@ -11,7 +11,7 @@ int gcd(int a, int b) {
     return a;
 }
 
-void simplify(int &a, int &b) {
+static void simplify(int &a, int &b) {
     int g = gcd(a, b);
 
     a /= g;
